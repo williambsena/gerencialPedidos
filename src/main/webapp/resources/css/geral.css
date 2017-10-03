@@ -1,0 +1,372 @@
+	/* MOBILE FIRST */
+	/* OS CSS PARA DESKTOP ESTAVAO NA QUERY MEDIA > 768px
+
+    /* GLOBAIS */
+    html, body {
+
+    background-color: #e9e9e9;
+               color: #666666;
+         font-family: 'Abel', sans-serif;
+         font-weight: 100;
+              margin: 0;
+          margin-top: 0;
+          min-height: 350px;
+
+    }
+
+    a {
+
+    	text-decoration: none;
+
+    }
+
+    .uppercase {
+
+    	text-transform: uppercase;
+
+    }
+
+
+    .links_icones {
+
+    	color          : #fff;
+    	text-decoration: none;
+
+    }
+
+    .links_icones:hover {
+
+    	color          : #fff;
+    	text-decoration: none;
+
+
+    }
+
+    .links_icones:visited {
+
+    	color          : #fff;
+    	text-decoration: none;
+
+    }
+
+    .full-height {
+
+    	height: 100vh;
+	}
+
+    .flex-center {
+
+	     	align-items: center;
+	    		display: flex;
+	   	justify-content: center;
+
+	}
+
+	.btn_menu {
+
+		position: absolute;
+			left: 10px;
+		 	 top: 10px;
+		 z-index: 99993;
+  	  	   color: #fff;
+
+	}
+
+	.center_obj {
+
+		   align-items: center;
+  			   display: flex;
+  		flex-direction: row;
+  		     flex-wrap: wrap;
+  	   justify-content: center;
+       width: 100%;
+	}
+
+	.container_painel {
+
+	    position: absolute;
+	   	width   : 100%;
+	       color: #fff;
+	}
+
+	#barra_topo {
+
+		position: fixed;
+		  height: 75px;
+		 z-index: 999;
+ 		   width: 100%;
+
+	}
+
+	.barra_pesquisa {
+
+		position: relative;
+		     top: 50px;
+
+	}
+
+	.container_listagem {
+
+		 position: absolute;
+			color: #666;
+			  top: 124px;
+		font-size: 18px;
+			width: 100%;
+
+	}
+
+	.form-group-style {
+
+		background-color: #ddd;
+	    	      border: 1px solid #ccc;
+	   		     padding: 10px;
+	       border-bottom: 3px solid #ccc;
+
+	}
+
+
+	.listagem {
+
+		font-size: 18px;
+
+	}
+
+
+	.top_bar {
+
+	    		position: absolute;
+	    	      height: 50px;
+	    		   width: 100%;
+		background-color: #1777D9;
+    		border-color: #53A4F5;
+	    	border-width: 0px 0px 3px;
+	    	border-style: solid;
+	    		   color: #fff;
+
+	}
+
+
+	h2 {
+
+		position: relative;
+			 top: -5px;
+
+	}
+
+	.inputs_form {
+
+			height: 50px;
+		 font-size: 18px;
+
+	}
+
+	.inputs_texto {
+
+		width: 450px;
+
+	}
+
+	.texto_comum {
+
+		font-size: 12px;
+
+	}
+
+	.container_botoes {
+
+		 width:300px;
+		height:300px;
+	  position:absolute;
+	       top:50%;
+	      left:50%;
+	margin-top:-150px;
+   margin-left:-150px;
+ 	   z-index: 9999;
+	text-align: center;
+
+
+
+	}
+
+	.btn_painel {
+
+	    	position: relative;
+	    	 display: inline-block;
+	    	   width: 100px;
+	          height: 100px;
+	    	  border: 1px solid #000;
+	          margin: 10px;
+	           color: #fff;
+	background-color: #1777D9;
+    	border-color: #53A4F5;
+	    border-width: 0px 0px 3px;
+	    border-style: solid;
+	   border-radius: 5px;
+		   font-size: 16px;
+
+	}
+
+	.botton_bar {
+
+		        position: absolute;
+		          bottom: 0px;
+		           width: 100%;
+	              height: 40px;
+		background-color: #1777D9;
+    		border-color: #53A4F5;
+	    	border-width: 3px 0px 0px;
+	    	border-style: solid;
+	    		   color: #fff;
+
+	}
+
+
+	.titulo-gbox {
+
+		  font-size: 18px;
+		font-weight: bold;
+
+	}
+
+
+	.invisivel {
+
+		display: none;
+                class:hidden;
+
+	}
+
+	.btn_additem {
+
+				position: fixed;
+		background-color: #1777D9;
+		   border-radius: 50px;
+		           float: right;
+				  bottom: 20px;
+				   right: 20px;
+		           width: 70px;
+		          height: 70px;
+		         z-index: 275;
+		      text-align: center;
+		           color: #fff;
+		      box-shadow: 2px 2px 7px 0px #53A4F5
+
+	}
+
+	.plus {
+
+    	position: relative;
+    		 top: 4px;
+       font-size: 44px;
+
+	}
+
+	#submit_form_item {
+
+		cursor: pointer;
+	}
+
+
+	.pace {
+
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+	}
+
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: #29d;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);
+  transform: translateX(100%) translateY(-100%) rotate(45deg);
+  pointer-events: none;
+}
+
+.pace.pace-active .pace-activity {
+  -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+  transform: translateX(50%) translateY(-50%) rotate(45deg);
+}
+
+.pace .pace-activity::before,
+.pace .pace-activity::after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: block;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    content: '';
+}
+
+.pace .pace-activity::before {
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    border-right-color: rgba(0, 0, 0, .2);
+    border-left-color: rgba(0, 0, 0, .2);
+    -webkit-animation: pace-theme-corner-indicator-spin 3s linear infinite;
+    animation: pace-theme-corner-indicator-spin 3s linear infinite;
+}
+
+.pace .pace-activity::after {
+    bottom: 50px;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    border-top-color: rgba(0, 0, 0, .2);
+    border-bottom-color: rgba(0, 0, 0, .2);
+    -webkit-animation: pace-theme-corner-indicator-spin 1s linear infinite;
+    animation: pace-theme-corner-indicator-spin 1s linear infinite;
+}
+
+@-webkit-keyframes pace-theme-corner-indicator-spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+@keyframes pace-theme-corner-indicator-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+	/* Hide HTML5 Up and Down arrows. */
+	input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+
+	    -webkit-appearance: none;
+	                margin: 0;
+
+	}
+
+	input[type="number"] {
+
+	    -moz-appearance: textfield;
+
+	}
+
+  tbody{
+    overflow : scroll;
+    height : limit;
+  }
+  .table_itens{
+    overflow : scroll;
+    height : limit;
+    max-width: 100%;
+  }
+  tr{
+    overflow : scroll;
+    height : limit;
+  }
+  

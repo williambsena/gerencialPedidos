@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition template="/layout.xhtml">
+        <ui:define name="conteudo">
+            <h:form class = "navbar navbar-inverse">
+                <br></br>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a  id="btn_todas_entregas" href="#">Todas</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="btn_entregas_buscar" href="#">Buscar</a>                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="btn_entregas_pendentes" href="#">Pendentes</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="btn_entregas_concluidas" href="#">Concluidas</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+                <br></br>
+                <h:form class="form-inline">
+                   
+                    <div class="row">
+                        <div class="col-sm-3" id="item_um">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h3 class="card-title" align="center">ITEM  1</h3>
+                                    <p id="p_exemplo">Teste</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h3 class="card-title" align="center">Primeira Entrega</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h3 class="card-title" align="center">Primeira Entrega</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h3 class="card-title" align="center">Primeira Entrega</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </h:form>
+                <input class="btn btn-lg btn-success btn-block btn_concluir" id="btn_conclui" value="Concluir"></input>			    	
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</html>
